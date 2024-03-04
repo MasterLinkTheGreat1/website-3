@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'sfm';
+    src: url('sfmed.OTF') format('OpenType');
+
+}
+
+@font-face {
+    font-family: 'sfpr';
+    src: url('sfreg.OTF') format('OpenType');
+}
+
+@font-face {
+    font-family: 'sfb';
+    src: url('sfbold.OTF') format('OpenType');
+}
+
+
+
+  
+
+  
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      rgb(112, 241, 213),
+      rgb(224, 101, 179),
+      rgb(250, 229, 96),
+      rgb(84, 184, 243),
+      rgb(146, 96, 222)
+    );
+    border-radius: 20px;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: var(--page-background);
+    background: var(--page-background)
+}
+
+#box {
+    width: 1850px;
+    margin: auto;
+    background-color: #301934;
+
+}
+
+:root {
+
+	--page-background: radial-gradient(70.71% 70.71% at 50% 50%, #20242F 0%, #191C25 100%);
+	--cyan-dark: #28A489;
+	--cyan-normal: #70F1D5;
+	--cyan-light: #CAFFF3;
+
+	--pink-dark: #AB4787;
+	--pink-normal: #E065B3;
+	--pink-light: #FFB0E2;
+
+	--yellow-dark: #C9B951;
+	--yellow-normal: #FAE560;
+	--yellow-light: #FFF6BE;
+
+	--blue-dark: #468DB6;
+	--blue-normal: #54B8F3;
+	--blue-light: #B4E3FF;
+
+	--purple-dark: #643F9B;
+	--purple-normal: #9260DE;
+	--purple-light: #CDAEFD;
+
+
+}
+
+table {
+    border: 3px solid royalblue;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-family: 'sfb';
+    font-size: 30px;
+    font-style: bold;
+}
+
+a:active {
+    color: red;
+}
+
+a {
+    color: blueviolet;
+}
+
+a:hover {
+    color: blueviolet;
+}
+
+a:visited {
+    color: blueviolet;
+}
+
+
+.title {
+    font-family: 'sfb';
+    font-size: 40px;
+    font-style: bold;
+    color: white;
+
+}
+
+h1 {
+    font-family: 'sfb';
+    font-size: 72px;
+    font-style: bold;
+    color: white;
+}
+
+h2 {
+    font-family: 'sfb';
+    font-size: 60px;
+    font-style: bold;
+    color: #b0b0b0;
+}
+
+ul {
+  color: #b0b0b0;
+  font-family: 'sfm';
+  font-size: 30px;
+}
+
+h3 {
+    font-family: 'sfb';
+    font-size: 50px;
+    color: #b0b0b0;
+}
+
+
+h4 {
+    font-family: 'sfm';
+    font-size: 40px;
+    color: #b0b0b0;
+}
+
+
+h5 {
+    font-family: 'sfm';
+    font-size: 35px;
+    color: #b0b0b0;
+}
+
+
+hr {
+    color:#ABC8C0;
+    border-width: 5px;
+    border-color: #ABC8C0;
+}
+
+p {
+    color: #b0b0b0;
+    font-family: 'sfpr';
+    font-size: 30px;
+}
+
+.macro {
+    font-style: italic;
+    font-style: bold;
+    background: linear-gradient(90.02deg, #70F1D5 0.02%, #E065B3 27.09%, #FAE560 51.04%, #54B8F3 76.56%, #9260DE 99.99%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+    font-family: 'sfb';
+
+}
+
+.right {
+    text-align: right;
+    align-items: right;
+    align-items: right;
+    align-self: right;
+    align-content: right;
+    float:right;
+}
+
+
+
+button.cyan:active {
+	box-shadow: -3px 3px 0 0 var(--cyan-dark), -3px 3px 0 2px var(--black);
+}
+
+button:disabled:after, button:disabled:hover:after, button.disabled:focus-visible:after {
+    transform: none;
+}
+
+button {
+	font-size: 16px;
+	line-height: 24px;
+    font-family: 'sfb';
+	color: var(--black);
+	padding: 8px 32px;
+	border-radius: 2px;
+	outline: 2px solid var(--black);
+	cursor: pointer;
+	transition: transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.5), box-shadow 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.5);
+	width: fit-content;
+	background: var(--white);
+	margin: 8px 0 8px 0;
+	border: none;
+}
+
+button.cyan {
+	background: var(--cyan-normal);
+}
+
+button:hover, button:focus-visible {
+	transform: translateX(5px) translateY(-5px);
+	box-shadow: -5px 5px 0 0 var(--gray), -5px 5px 0 2px var(--black);
+}
+
+button.cyan:hover, button.cyan:focus-visible {
+	box-shadow: -5px 5px 0 0 var(--cyan-dark), -5px 5px 0 2px var(--black);
+}
+
+select:hover, select:focus-visible {
+	transform: translateX(5px) translateY(-5px);
+	box-shadow: -5px 5px 0 0 var(--gray), -5px 5px 0 2px var(--black);
+}
+
+select:active {
+	box-shadow: -3px 3px 0 0 var(--gray), -3px 3px 0 2px var(--black);
+	transform: translateX(2px) translateY(-2px);
+}
